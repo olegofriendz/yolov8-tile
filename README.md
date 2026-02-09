@@ -17,6 +17,7 @@ pip install -r requirements.txt
 - Filters out empty tiles (configurable)
 - Fast: pure OpenCV + NumPy, no heavy dependencies
 - CLI interface — ready for production pipelines
+- Works with Roboflow-exported datasets (YOLOv8 format)
 
 ## 🚀 Quick Start
 
@@ -50,11 +51,17 @@ your-dataset/
 ├── data.yaml
 ├── train/
 │   ├── images/
+│   │   └── *.jpg
 │   └── labels/
+│       └── *.txt
 ├── valid/
 │   ├── images/
+│   │   └── *.jpg
 │   └── labels/
+│       └── *.txt
 └── test/
     ├── images/
+    │   └── *.jpg
     └── labels/
+        └── *.txt
 ```
